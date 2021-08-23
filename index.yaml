@@ -3,9 +3,9 @@ entries:
   elasticsearch6:
   - apiVersion: v1
     appVersion: 6.6.2
-    created: "2021-08-20T09:08:58.989383524+03:00"
+    created: "2021-08-23T13:39:47.123869319+03:00"
     description: A Helm chart for Elasticsearch
-    digest: f3a516152602fc3c45e159054685a7714f894bd89676eaf8ca83b543e18e10d4
+    digest: 4998aa02a3fe5ac952f843ee03d1917881e19e441a8b3297f88d414f3a97809a
     name: elasticsearch6
     urls:
     - elasticsearch6-0.1.0.tgz
@@ -13,22 +13,32 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "5.7"
-    created: "2021-08-20T09:08:58.990182621+03:00"
+    created: "2021-08-23T13:39:47.125366694+03:00"
     description: A Helm chart for Mysql
-    digest: 402e978a8af81ce91b4b9fbf5addfb8468ce3723248608150e24b9823b5387a5
+    digest: 03fc136fed681ca619cb58c0f690320008032ba99cd35cfb314c752917cfe6d8
     name: mysql
     type: application
     urls:
     - mysql-0.1.0.tgz
     version: 0.1.0
+  postgresql:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2021-08-23T13:39:47.143458158+03:00"
+    description: A Helm chart for Kubernetes
+    digest: b90855501d12708e6b02665514f2ba89e3c7dac9cfdea0042c05005b33ac1f6b
+    name: postgresql
+    urls:
+    - postgresql-0.1.0.tgz
+    version: 0.1.0
   rabbitmq:
   - apiVersion: v1
     appVersion: 3.8.0
-    created: "2021-08-20T09:08:58.990710866+03:00"
+    created: "2021-08-23T13:39:47.170529302+03:00"
     description: A Helm chart for RabbitMQ
-    digest: 6240bc96525b2208c96f711e15aa9968a73fd8a50c94868ae515390423eb97bb
+    digest: 62e063dc234397041c8453fee3d66cb5a4b00a2883b9b9021725afdad1137b2e
     name: rabbitmq
     urls:
     - rabbitmq-0.1.0.tgz
     version: 0.1.0
-generated: "2021-08-20T09:08:58.988681094+03:00"
+generated: "2021-08-23T13:39:47.10767652+03:00"
