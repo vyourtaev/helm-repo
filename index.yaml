@@ -3,17 +3,37 @@ entries:
   elasticsearch6:
   - apiVersion: v1
     appVersion: 6.6.2
-    created: "2021-08-24T08:42:37.12546225+03:00"
+    created: "2021-08-28T08:48:50.918847728+03:00"
     description: A Helm chart for Elasticsearch
     digest: 8292eeb3ae74ecf1e85c0b03d39293e6d00488a12c1cea182a4149de5d8dad36
     name: elasticsearch6
     urls:
     - elasticsearch6-0.1.0.tgz
     version: 0.1.0
+  maui:
+  - apiVersion: v2
+    appVersion: 5.0.63
+    created: "2021-08-28T08:48:50.921574081+03:00"
+    dependencies:
+    - condition: elasticsearch6.enabled
+      name: elasticsearch6
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    description: A Helm chart for Maui application
+    digest: 9cb64ee21421946d22445dc786e49d558fb03e4fc5930532e15e1c1b6b926452
+    name: maui
+    type: application
+    urls:
+    - maui-0.1.0.tgz
+    version: 0.1.0
   mysql:
   - apiVersion: v2
     appVersion: "5.7"
-    created: "2021-08-24T08:42:37.141549864+03:00"
+    created: "2021-08-28T08:48:50.932074912+03:00"
     description: A Helm chart for Mysql
     digest: bdecfbd5514460b6817ded37422c0ec930c329e48696077fe27a1d05b798f214
     name: mysql
@@ -24,7 +44,7 @@ entries:
   postgresql:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-08-24T08:42:37.160053264+03:00"
+    created: "2021-08-28T08:48:50.950838661+03:00"
     description: A Helm chart for Kubernetes
     digest: b90855501d12708e6b02665514f2ba89e3c7dac9cfdea0042c05005b33ac1f6b
     name: postgresql
@@ -34,11 +54,11 @@ entries:
   rabbitmq:
   - apiVersion: v1
     appVersion: 3.8.0
-    created: "2021-08-24T08:42:37.185654478+03:00"
+    created: "2021-08-28T08:48:50.976436833+03:00"
     description: A Helm chart for RabbitMQ
     digest: 47d0390c33cdf58757673751bdc5efbd768e6c33981b5b79456a4d96cb578cdf
     name: rabbitmq
     urls:
     - rabbitmq-0.1.0.tgz
     version: 0.1.0
-generated: "2021-08-24T08:42:37.124131774+03:00"
+generated: "2021-08-28T08:48:50.881608332+03:00"
