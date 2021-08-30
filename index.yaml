@@ -3,7 +3,7 @@ entries:
   auth:
   - apiVersion: v2
     appVersion: 5.0.193
-    created: "2021-08-30T11:56:58.146693394+03:00"
+    created: "2021-08-30T12:06:28.633935996+03:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -23,7 +23,7 @@ entries:
   avon:
   - apiVersion: v2
     appVersion: 5.0.238
-    created: "2021-08-30T11:56:58.148309043+03:00"
+    created: "2021-08-30T12:06:28.635424937+03:00"
     dependencies:
     - condition: rabbitmq.enabled
       name: rabbitmq
@@ -34,7 +34,7 @@ entries:
       repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
       version: 0.1.0
     description: A Helm chart for Avon application
-    digest: 1b0a66a0d530736207b7a0def5e386027b4a7cf968944be30c2c6b4dad8abcdc
+    digest: e886764059e319e677aeaa17d0f4039846686c105ee390bc0b2c54c215b972db
     name: avon
     type: application
     urls:
@@ -43,7 +43,7 @@ entries:
   dnc:
   - apiVersion: v2
     appVersion: 5.0.84
-    created: "2021-08-30T11:56:58.149774176+03:00"
+    created: "2021-08-30T12:06:28.63691983+03:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -63,7 +63,7 @@ entries:
   elasticsearch6:
   - apiVersion: v1
     appVersion: 6.6.2
-    created: "2021-08-30T11:56:58.150169143+03:00"
+    created: "2021-08-30T12:06:28.637339072+03:00"
     description: A Helm chart for Elasticsearch
     digest: 8292eeb3ae74ecf1e85c0b03d39293e6d00488a12c1cea182a4149de5d8dad36
     name: elasticsearch6
@@ -73,7 +73,7 @@ entries:
   maui:
   - apiVersion: v2
     appVersion: 5.0.63
-    created: "2021-08-30T11:56:58.151415704+03:00"
+    created: "2021-08-30T12:06:28.638679478+03:00"
     dependencies:
     - condition: elasticsearch6.enabled
       name: elasticsearch6
@@ -93,7 +93,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "5.7"
-    created: "2021-08-30T11:56:58.152047863+03:00"
+    created: "2021-08-30T12:06:28.639445337+03:00"
     description: A Helm chart for Mysql
     digest: bdecfbd5514460b6817ded37422c0ec930c329e48696077fe27a1d05b798f214
     name: mysql
@@ -104,7 +104,7 @@ entries:
   postgresql:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-08-30T11:56:58.152585222+03:00"
+    created: "2021-08-30T12:06:28.639980227+03:00"
     description: A Helm chart for Postgresql
     digest: f12014f5e62c1f5fd4fd13286fb32b1a5e1f0e1b569ce4f22a640ee45583bb14
     name: postgresql
@@ -114,7 +114,7 @@ entries:
   rabbitmq:
   - apiVersion: v1
     appVersion: 3.8.0
-    created: "2021-08-30T11:56:58.153070645+03:00"
+    created: "2021-08-30T12:06:28.640567341+03:00"
     description: A Helm chart for RabbitMQ
     digest: 47d0390c33cdf58757673751bdc5efbd768e6c33981b5b79456a4d96cb578cdf
     name: rabbitmq
@@ -124,12 +124,12 @@ entries:
   registry:
   - apiVersion: v2
     appVersion: 5.0.12
-    created: "2021-08-30T11:56:58.153607611+03:00"
+    created: "2021-08-30T12:06:28.641174821+03:00"
     description: A Helm chart for Sherlock application
-    digest: 533a9d7f4279dbe5c1d45c96074fcc56d3fc2626df9b11f84451df5bf5561f9a
+    digest: 2927da7bb6b83eb306615e0d5f88b28e3494e0aaa2117b95ee8beeb06dd22d68
     name: registry
     type: application
     urls:
     - registry-0.1.0.tgz
     version: 0.1.0
-generated: "2021-08-30T11:56:58.144627193+03:00"
+generated: "2021-08-30T12:06:28.6322335+03:00"
