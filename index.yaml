@@ -1,9 +1,29 @@
 apiVersion: v1
 entries:
+  auth:
+  - apiVersion: v2
+    appVersion: 5.0.193
+    created: "2021-08-30T08:00:22.976221256+03:00"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    description: A Helm chart for Auth application
+    digest: ca46820a3ed02b2a5045787d75435070e0c2bfa88eea52201ae720d6ccf96fb0
+    name: auth
+    type: application
+    urls:
+    - auth-0.1.0.tgz
+    version: 0.1.0
   dnc:
   - apiVersion: v2
     appVersion: 5.0.84
-    created: "2021-08-30T00:00:26.871906953+03:00"
+    created: "2021-08-30T08:00:22.977620122+03:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -23,7 +43,7 @@ entries:
   elasticsearch6:
   - apiVersion: v1
     appVersion: 6.6.2
-    created: "2021-08-30T00:00:26.872333302+03:00"
+    created: "2021-08-30T08:00:22.977986608+03:00"
     description: A Helm chart for Elasticsearch
     digest: 8292eeb3ae74ecf1e85c0b03d39293e6d00488a12c1cea182a4149de5d8dad36
     name: elasticsearch6
@@ -33,7 +53,7 @@ entries:
   maui:
   - apiVersion: v2
     appVersion: 5.0.63
-    created: "2021-08-30T00:00:26.873572485+03:00"
+    created: "2021-08-30T08:00:22.979226457+03:00"
     dependencies:
     - condition: elasticsearch6.enabled
       name: elasticsearch6
@@ -53,7 +73,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "5.7"
-    created: "2021-08-30T00:00:26.874241647+03:00"
+    created: "2021-08-30T08:00:22.979859582+03:00"
     description: A Helm chart for Mysql
     digest: bdecfbd5514460b6817ded37422c0ec930c329e48696077fe27a1d05b798f214
     name: mysql
@@ -64,7 +84,7 @@ entries:
   postgresql:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-08-30T00:00:26.874724185+03:00"
+    created: "2021-08-30T08:00:22.980326137+03:00"
     description: A Helm chart for Postgresql
     digest: f12014f5e62c1f5fd4fd13286fb32b1a5e1f0e1b569ce4f22a640ee45583bb14
     name: postgresql
@@ -74,11 +94,11 @@ entries:
   rabbitmq:
   - apiVersion: v1
     appVersion: 3.8.0
-    created: "2021-08-30T00:00:26.875205602+03:00"
+    created: "2021-08-30T08:00:22.980750964+03:00"
     description: A Helm chart for RabbitMQ
     digest: 47d0390c33cdf58757673751bdc5efbd768e6c33981b5b79456a4d96cb578cdf
     name: rabbitmq
     urls:
     - rabbitmq-0.1.0.tgz
     version: 0.1.0
-generated: "2021-08-30T00:00:26.870151797+03:00"
+generated: "2021-08-30T08:00:22.974576902+03:00"
