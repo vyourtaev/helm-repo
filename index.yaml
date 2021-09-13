@@ -3,7 +3,7 @@ entries:
   auth:
   - apiVersion: v2
     appVersion: 5.0.193
-    created: "2021-09-13T06:22:45.523932114+03:00"
+    created: "2021-09-13T09:28:09.39448539+03:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -23,7 +23,7 @@ entries:
   avon:
   - apiVersion: v2
     appVersion: 5.0.238
-    created: "2021-09-13T06:22:45.52543028+03:00"
+    created: "2021-09-13T09:28:09.395936565+03:00"
     dependencies:
     - condition: rabbitmq.enabled
       name: rabbitmq
@@ -43,7 +43,7 @@ entries:
   boxy:
   - apiVersion: v2
     appVersion: 5.0.324
-    created: "2021-09-13T06:22:45.526788347+03:00"
+    created: "2021-09-13T09:28:09.397265137+03:00"
     dependencies:
     - condition: elasticsearch6.required
       name: elasticsearch6
@@ -63,7 +63,7 @@ entries:
   dnc:
   - apiVersion: v2
     appVersion: 5.0.84
-    created: "2021-09-13T06:22:45.528371936+03:00"
+    created: "2021-09-13T09:28:09.398875152+03:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -83,7 +83,7 @@ entries:
   elasticsearch6:
   - apiVersion: v1
     appVersion: 6.6.2
-    created: "2021-09-13T06:22:45.528814395+03:00"
+    created: "2021-09-13T09:28:09.399297063+03:00"
     description: A Helm chart for Elasticsearch
     digest: 8292eeb3ae74ecf1e85c0b03d39293e6d00488a12c1cea182a4149de5d8dad36
     name: elasticsearch6
@@ -108,7 +108,7 @@ entries:
           url: https://www.jenkins.io/
     apiVersion: v2
     appVersion: 2.303.1
-    created: "2021-09-13T06:22:45.533572377+03:00"
+    created: "2021-09-13T09:28:09.403919547+03:00"
     description: Jenkins - Build great things at any scale! The leading open source
       automation server, Jenkins provides hundreds of plugins to support building,
       deploying and automating any project.
@@ -138,7 +138,7 @@ entries:
   maui:
   - apiVersion: v2
     appVersion: 5.0.63
-    created: "2021-09-13T06:22:45.535432731+03:00"
+    created: "2021-09-13T09:28:09.40642756+03:00"
     dependencies:
     - condition: elasticsearch6.enabled
       name: elasticsearch6
@@ -158,7 +158,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "5.7"
-    created: "2021-09-13T06:22:45.536400579+03:00"
+    created: "2021-09-13T09:28:09.407363522+03:00"
     description: A Helm chart for Mysql
     digest: bdecfbd5514460b6817ded37422c0ec930c329e48696077fe27a1d05b798f214
     name: mysql
@@ -169,9 +169,9 @@ entries:
   postgresql:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-09-13T06:22:45.53692961+03:00"
+    created: "2021-09-13T09:28:09.40812687+03:00"
     description: A Helm chart for Postgresql
-    digest: f12014f5e62c1f5fd4fd13286fb32b1a5e1f0e1b569ce4f22a640ee45583bb14
+    digest: d68735b1a760babfb0db7c4c80f681e7421c7f3a3f33c4c2451e81f02bb2b539
     name: postgresql
     urls:
     - postgresql-0.1.0.tgz
@@ -179,7 +179,7 @@ entries:
   rabbitmq:
   - apiVersion: v1
     appVersion: 3.8.0
-    created: "2021-09-13T06:22:45.537501976+03:00"
+    created: "2021-09-13T09:28:09.408785671+03:00"
     description: A Helm chart for RabbitMQ
     digest: 47d0390c33cdf58757673751bdc5efbd768e6c33981b5b79456a4d96cb578cdf
     name: rabbitmq
@@ -189,7 +189,7 @@ entries:
   registry:
   - apiVersion: v2
     appVersion: 5.0.12
-    created: "2021-09-13T06:22:45.53804191+03:00"
+    created: "2021-09-13T09:28:09.409585304+03:00"
     description: A Helm chart for Sherlock application
     digest: 2927da7bb6b83eb306615e0d5f88b28e3494e0aaa2117b95ee8beeb06dd22d68
     name: registry
@@ -197,4 +197,4 @@ entries:
     urls:
     - registry-0.1.0.tgz
     version: 0.1.0
-generated: "2021-09-13T06:22:45.5212259+03:00"
+generated: "2021-09-13T09:28:09.392591857+03:00"
