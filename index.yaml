@@ -1,9 +1,29 @@
 apiVersion: v1
 entries:
+  boxy:
+  - apiVersion: v2
+    appVersion: 5.0.324
+    created: "2021-09-13T06:21:49.414724997+03:00"
+    dependencies:
+    - condition: elasticsearch6.required
+      name: elasticsearch6
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    description: A Helm chart for Boxy application
+    digest: d9b58614a1ab31b833bcd7052ee8afdbb1ac99868d2c289c2551995886416396
+    name: boxy
+    type: application
+    urls:
+    - boxy-0.1.0.tgz
+    version: 0.1.0
   elasticsearch6:
   - apiVersion: v1
     appVersion: 6.6.2
-    created: "2021-08-28T10:28:57.763058048+03:00"
+    created: "2021-09-13T06:21:49.437186014+03:00"
     description: A Helm chart for Elasticsearch
     digest: 8292eeb3ae74ecf1e85c0b03d39293e6d00488a12c1cea182a4149de5d8dad36
     name: elasticsearch6
@@ -13,7 +33,7 @@ entries:
   maui:
   - apiVersion: v2
     appVersion: 5.0.63
-    created: "2021-08-28T10:28:57.764997862+03:00"
+    created: "2021-09-13T06:21:49.44941836+03:00"
     dependencies:
     - condition: elasticsearch6.enabled
       name: elasticsearch6
@@ -33,7 +53,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "5.7"
-    created: "2021-08-28T10:28:57.765812922+03:00"
+    created: "2021-09-13T06:21:49.458539773+03:00"
     description: A Helm chart for Mysql
     digest: bdecfbd5514460b6817ded37422c0ec930c329e48696077fe27a1d05b798f214
     name: mysql
@@ -44,7 +64,7 @@ entries:
   postgresql:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-08-28T10:28:57.766385716+03:00"
+    created: "2021-09-13T06:21:49.46835004+03:00"
     description: A Helm chart for Postgresql
     digest: f12014f5e62c1f5fd4fd13286fb32b1a5e1f0e1b569ce4f22a640ee45583bb14
     name: postgresql
@@ -54,11 +74,11 @@ entries:
   rabbitmq:
   - apiVersion: v1
     appVersion: 3.8.0
-    created: "2021-08-28T10:28:57.766913131+03:00"
+    created: "2021-09-13T06:21:49.485626768+03:00"
     description: A Helm chart for RabbitMQ
     digest: 47d0390c33cdf58757673751bdc5efbd768e6c33981b5b79456a4d96cb578cdf
     name: rabbitmq
     urls:
     - rabbitmq-0.1.0.tgz
     version: 0.1.0
-generated: "2021-08-28T10:28:57.762316483+03:00"
+generated: "2021-09-13T06:21:49.412226656+03:00"
