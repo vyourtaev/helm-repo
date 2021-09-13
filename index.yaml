@@ -1,9 +1,49 @@
 apiVersion: v1
 entries:
+  auth:
+  - apiVersion: v2
+    appVersion: 5.0.193
+    created: "2021-09-13T06:22:45.523932114+03:00"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    description: A Helm chart for Auth application
+    digest: 8c4c0452526f2eb6ce32001726697fc4d78b8a7b51505ee401e5cd4ba0c532cc
+    name: auth
+    type: application
+    urls:
+    - auth-0.1.0.tgz
+    version: 0.1.0
+  avon:
+  - apiVersion: v2
+    appVersion: 5.0.238
+    created: "2021-09-13T06:22:45.52543028+03:00"
+    dependencies:
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    - condition: scherlock.required
+      name: registry
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    description: A Helm chart for Avon application
+    digest: e886764059e319e677aeaa17d0f4039846686c105ee390bc0b2c54c215b972db
+    name: avon
+    type: application
+    urls:
+    - avon-0.1.0.tgz
+    version: 0.1.0
   boxy:
   - apiVersion: v2
     appVersion: 5.0.324
-    created: "2021-09-13T06:21:49.414724997+03:00"
+    created: "2021-09-13T06:22:45.526788347+03:00"
     dependencies:
     - condition: elasticsearch6.required
       name: elasticsearch6
@@ -20,20 +60,85 @@ entries:
     urls:
     - boxy-0.1.0.tgz
     version: 0.1.0
+  dnc:
+  - apiVersion: v2
+    appVersion: 5.0.84
+    created: "2021-09-13T06:22:45.528371936+03:00"
+    dependencies:
+    - condition: mysql.enabled
+      name: mysql
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    description: A Helm chart for Dnc application
+    digest: 5cef18311045e45dc2b68e8fc46f5d68b1ad19d728408346c96ff000fcc0a49b
+    name: dnc
+    type: application
+    urls:
+    - dnc-0.1.0.tgz
+    version: 0.1.0
   elasticsearch6:
   - apiVersion: v1
     appVersion: 6.6.2
-    created: "2021-09-13T06:21:49.437186014+03:00"
+    created: "2021-09-13T06:22:45.528814395+03:00"
     description: A Helm chart for Elasticsearch
     digest: 8292eeb3ae74ecf1e85c0b03d39293e6d00488a12c1cea182a4149de5d8dad36
     name: elasticsearch6
     urls:
     - elasticsearch6-0.1.0.tgz
     version: 0.1.0
+  jenkins:
+  - annotations:
+      artifacthub.io/images: |
+        - name: jenkins
+          image: jenkins/jenkins:2.303.1-jdk11
+        - name: k8s-sidecar
+          image: kiwigrid/k8s-sidecar:0.1.275
+        - name: inbound-agent
+          image: jenkins/inbound-agent:4.6-1
+        - name: backup
+          image: maorfr/kube-tasks:0.2.0
+      artifacthub.io/links: |
+        - name: Chart Source
+          url: https://github.com/jenkinsci/helm-charts/tree/main/charts/jenkins
+        - name: Jenkins
+          url: https://www.jenkins.io/
+    apiVersion: v2
+    appVersion: 2.303.1
+    created: "2021-09-13T06:22:45.533572377+03:00"
+    description: Jenkins - Build great things at any scale! The leading open source
+      automation server, Jenkins provides hundreds of plugins to support building,
+      deploying and automating any project.
+    digest: bf4395080cd4784eb3eae02745fc7c6ed64dbcb56a1b4541608344ba0fad8fa6
+    home: https://jenkins.io/
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    maintainers:
+    - email: maor.friedman@redhat.com
+      name: maorfr
+    - email: mail@torstenwalter.de
+      name: torstenwalter
+    - email: garridomota@gmail.com
+      name: mogaal
+    - email: wmcdona89@gmail.com
+      name: wmcdona89
+    - email: timjacomb1@gmail.com
+      name: timja
+    name: jenkins
+    sources:
+    - https://github.com/jenkinsci/jenkins
+    - https://github.com/jenkinsci/docker-inbound-agent
+    - https://github.com/maorfr/kube-tasks
+    - https://github.com/jenkinsci/configuration-as-code-plugin
+    urls:
+    - jenkins-3.5.14.tgz
+    version: 3.5.14
   maui:
   - apiVersion: v2
     appVersion: 5.0.63
-    created: "2021-09-13T06:21:49.44941836+03:00"
+    created: "2021-09-13T06:22:45.535432731+03:00"
     dependencies:
     - condition: elasticsearch6.enabled
       name: elasticsearch6
@@ -44,7 +149,7 @@ entries:
       repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
       version: 0.1.0
     description: A Helm chart for Maui application
-    digest: b13f86a2702d5176894833812b6a8bed7e890d7f6b039fb3027c2de931b453ac
+    digest: 1cd2b8cf4a034d53407601b5a0f5b8495049ca36cc4b8fcd2499848967617546
     name: maui
     type: application
     urls:
@@ -53,7 +158,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "5.7"
-    created: "2021-09-13T06:21:49.458539773+03:00"
+    created: "2021-09-13T06:22:45.536400579+03:00"
     description: A Helm chart for Mysql
     digest: bdecfbd5514460b6817ded37422c0ec930c329e48696077fe27a1d05b798f214
     name: mysql
@@ -64,7 +169,7 @@ entries:
   postgresql:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-09-13T06:21:49.46835004+03:00"
+    created: "2021-09-13T06:22:45.53692961+03:00"
     description: A Helm chart for Postgresql
     digest: f12014f5e62c1f5fd4fd13286fb32b1a5e1f0e1b569ce4f22a640ee45583bb14
     name: postgresql
@@ -74,11 +179,22 @@ entries:
   rabbitmq:
   - apiVersion: v1
     appVersion: 3.8.0
-    created: "2021-09-13T06:21:49.485626768+03:00"
+    created: "2021-09-13T06:22:45.537501976+03:00"
     description: A Helm chart for RabbitMQ
     digest: 47d0390c33cdf58757673751bdc5efbd768e6c33981b5b79456a4d96cb578cdf
     name: rabbitmq
     urls:
     - rabbitmq-0.1.0.tgz
     version: 0.1.0
-generated: "2021-09-13T06:21:49.412226656+03:00"
+  registry:
+  - apiVersion: v2
+    appVersion: 5.0.12
+    created: "2021-09-13T06:22:45.53804191+03:00"
+    description: A Helm chart for Sherlock application
+    digest: 2927da7bb6b83eb306615e0d5f88b28e3494e0aaa2117b95ee8beeb06dd22d68
+    name: registry
+    type: application
+    urls:
+    - registry-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-09-13T06:22:45.5212259+03:00"
