@@ -1,9 +1,29 @@
 apiVersion: v1
 entries:
+  accounts:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-09-14T06:52:33.93054879+03:00"
+    dependencies:
+    - condition: mysql.required
+      name: mysql
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    - condition: rabbitmq.enabled
+      name: rabbitmq
+      repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
+      version: 0.1.0
+    description: A Helm chart for Accounts application
+    digest: c80c60beb3e80855920df98afe69362140d81c39dd3b24d6b5100e99cf87c7a3
+    name: accounts
+    type: application
+    urls:
+    - accounts-0.1.0.tgz
+    version: 0.1.0
   auth:
   - apiVersion: v2
     appVersion: 5.0.193
-    created: "2021-09-13T09:28:09.39448539+03:00"
+    created: "2021-09-14T06:52:33.933414699+03:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -23,7 +43,7 @@ entries:
   avon:
   - apiVersion: v2
     appVersion: 5.0.238
-    created: "2021-09-13T09:28:09.395936565+03:00"
+    created: "2021-09-14T06:52:33.935024684+03:00"
     dependencies:
     - condition: rabbitmq.enabled
       name: rabbitmq
@@ -43,7 +63,7 @@ entries:
   boxy:
   - apiVersion: v2
     appVersion: 5.0.324
-    created: "2021-09-13T09:28:09.397265137+03:00"
+    created: "2021-09-14T06:52:33.936556008+03:00"
     dependencies:
     - condition: elasticsearch6.required
       name: elasticsearch6
@@ -63,7 +83,7 @@ entries:
   dnc:
   - apiVersion: v2
     appVersion: 5.0.84
-    created: "2021-09-13T09:28:09.398875152+03:00"
+    created: "2021-09-14T06:52:33.938270271+03:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -83,7 +103,7 @@ entries:
   elasticsearch6:
   - apiVersion: v1
     appVersion: 6.6.2
-    created: "2021-09-13T09:28:09.399297063+03:00"
+    created: "2021-09-14T06:52:33.938730101+03:00"
     description: A Helm chart for Elasticsearch
     digest: 8292eeb3ae74ecf1e85c0b03d39293e6d00488a12c1cea182a4149de5d8dad36
     name: elasticsearch6
@@ -108,7 +128,7 @@ entries:
           url: https://www.jenkins.io/
     apiVersion: v2
     appVersion: 2.303.1
-    created: "2021-09-13T09:28:09.403919547+03:00"
+    created: "2021-09-14T06:52:33.943848013+03:00"
     description: Jenkins - Build great things at any scale! The leading open source
       automation server, Jenkins provides hundreds of plugins to support building,
       deploying and automating any project.
@@ -138,7 +158,7 @@ entries:
   maui:
   - apiVersion: v2
     appVersion: 5.0.63
-    created: "2021-09-13T09:28:09.40642756+03:00"
+    created: "2021-09-14T06:52:33.945174769+03:00"
     dependencies:
     - condition: elasticsearch6.enabled
       name: elasticsearch6
@@ -158,7 +178,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "5.7"
-    created: "2021-09-13T09:28:09.407363522+03:00"
+    created: "2021-09-14T06:52:33.946109694+03:00"
     description: A Helm chart for Mysql
     digest: bdecfbd5514460b6817ded37422c0ec930c329e48696077fe27a1d05b798f214
     name: mysql
@@ -169,7 +189,7 @@ entries:
   postgresql:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-09-13T09:28:09.40812687+03:00"
+    created: "2021-09-14T06:52:33.946944762+03:00"
     description: A Helm chart for Postgresql
     digest: d68735b1a760babfb0db7c4c80f681e7421c7f3a3f33c4c2451e81f02bb2b539
     name: postgresql
@@ -179,7 +199,7 @@ entries:
   rabbitmq:
   - apiVersion: v1
     appVersion: 3.8.0
-    created: "2021-09-13T09:28:09.408785671+03:00"
+    created: "2021-09-14T06:52:33.947679793+03:00"
     description: A Helm chart for RabbitMQ
     digest: 47d0390c33cdf58757673751bdc5efbd768e6c33981b5b79456a4d96cb578cdf
     name: rabbitmq
@@ -189,7 +209,7 @@ entries:
   registry:
   - apiVersion: v2
     appVersion: 5.0.12
-    created: "2021-09-13T09:28:09.409585304+03:00"
+    created: "2021-09-14T06:52:33.948528195+03:00"
     description: A Helm chart for Sherlock application
     digest: 2927da7bb6b83eb306615e0d5f88b28e3494e0aaa2117b95ee8beeb06dd22d68
     name: registry
@@ -197,4 +217,4 @@ entries:
     urls:
     - registry-0.1.0.tgz
     version: 0.1.0
-generated: "2021-09-13T09:28:09.392591857+03:00"
+generated: "2021-09-14T06:52:33.927019055+03:00"
