@@ -3,7 +3,7 @@ entries:
   accounts:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-11-15T14:14:24.247347072+02:00"
+    created: "2021-11-15T15:30:19.453362138+02:00"
     dependencies:
     - condition: mysql.required
       name: mysql
@@ -23,7 +23,7 @@ entries:
   auth:
   - apiVersion: v2
     appVersion: 5.0.193
-    created: "2021-11-15T14:14:24.249120527+02:00"
+    created: "2021-11-15T15:30:19.455402354+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -43,7 +43,7 @@ entries:
   avon:
   - apiVersion: v2
     appVersion: 5.0.238
-    created: "2021-11-15T14:14:24.251412938+02:00"
+    created: "2021-11-15T15:30:19.457309969+02:00"
     dependencies:
     - condition: rabbitmq.enabled
       name: rabbitmq
@@ -63,7 +63,7 @@ entries:
   boxy:
   - apiVersion: v2
     appVersion: 5.0.324
-    created: "2021-11-15T14:14:24.253088715+02:00"
+    created: "2021-11-15T15:30:19.45939168+02:00"
     dependencies:
     - condition: elasticsearch6.required
       name: elasticsearch6
@@ -83,7 +83,7 @@ entries:
   common:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-11-15T14:14:24.253365441+02:00"
+    created: "2021-11-15T15:30:19.460502418+02:00"
     description: A Library Helm Chart for grouping common logic between charts. This
       chart is not deployable by itself.
     digest: d464c4ddccaed707b62e23ef06b59188f0f6f940227d99d2ed7d0484aabd54cb
@@ -94,7 +94,7 @@ entries:
   conny:
   - apiVersion: v2
     appVersion: 5.0.131
-    created: "2021-11-15T14:14:24.253973876+02:00"
+    created: "2021-11-15T15:30:19.461335528+02:00"
     description: A Helm chart for Conny application
     digest: 2b80af6208d36512f4fec9e8a0319564775071cb7754702be548632087d9812d
     name: conny
@@ -105,7 +105,7 @@ entries:
   contacts:
   - apiVersion: v2
     appVersion: 5.0.262
-    created: "2021-11-15T14:14:24.255358035+02:00"
+    created: "2021-11-15T15:30:19.462982391+02:00"
     dependencies:
     - condition: elasticsearch6.required
       name: elasticsearch6
@@ -125,7 +125,7 @@ entries:
   did:
   - apiVersion: v2
     appVersion: 5.0.396
-    created: "2021-11-15T14:14:24.257621279+02:00"
+    created: "2021-11-15T15:30:19.465125779+02:00"
     dependencies:
     - condition: mysql.required
       name: mysql
@@ -145,7 +145,7 @@ entries:
   dnc:
   - apiVersion: v2
     appVersion: 5.0.84
-    created: "2021-11-15T14:14:24.259307461+02:00"
+    created: "2021-11-15T15:30:19.46680038+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -156,7 +156,7 @@ entries:
       repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
       version: 0.1.0
     description: A Helm chart for Dnc application
-    digest: dac73cea034daab6c14e7b1d14d3ed39061c0a40bbd89e2d6071595be304641f
+    digest: 9209c7975658352cd4f06d547ed00ece905c73bb69b18d1e6a52ddb6b3a9e712
     name: dnc
     type: application
     urls:
@@ -165,7 +165,7 @@ entries:
   elasticsearch6:
   - apiVersion: v1
     appVersion: 6.6.2
-    created: "2021-11-15T14:14:24.259753735+02:00"
+    created: "2021-11-15T15:30:19.467471132+02:00"
     description: A Helm chart for Elasticsearch
     digest: 8292eeb3ae74ecf1e85c0b03d39293e6d00488a12c1cea182a4149de5d8dad36
     name: elasticsearch6
@@ -175,7 +175,7 @@ entries:
   fuse:
   - apiVersion: v2
     appVersion: 5.0.579
-    created: "2021-11-15T14:14:24.261480821+02:00"
+    created: "2021-11-15T15:30:19.469475253+02:00"
     dependencies:
     - condition: mysql.enabled
       name: mysql
@@ -195,7 +195,7 @@ entries:
   gearman:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-11-15T14:14:24.262739802+02:00"
+    created: "2021-11-15T15:30:19.470444845+02:00"
     dependencies:
     - name: common
       repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
@@ -225,7 +225,7 @@ entries:
           url: https://www.jenkins.io/
     apiVersion: v2
     appVersion: 2.303.1
-    created: "2021-11-15T14:14:24.26793901+02:00"
+    created: "2021-11-15T15:30:19.476413762+02:00"
     description: Jenkins - Build great things at any scale! The leading open source
       automation server, Jenkins provides hundreds of plugins to support building,
       deploying and automating any project.
@@ -255,7 +255,7 @@ entries:
   maui:
   - apiVersion: v2
     appVersion: 5.0.63
-    created: "2021-11-15T14:14:24.269597768+02:00"
+    created: "2021-11-15T15:30:19.477898555+02:00"
     dependencies:
     - condition: elasticsearch6.enabled
       name: elasticsearch6
@@ -275,7 +275,7 @@ entries:
   mysql:
   - apiVersion: v2
     appVersion: "5.7"
-    created: "2021-11-15T14:14:24.270293345+02:00"
+    created: "2021-11-15T15:30:19.478762789+02:00"
     description: A Helm chart for Mysql
     digest: bdecfbd5514460b6817ded37422c0ec930c329e48696077fe27a1d05b798f214
     name: mysql
@@ -286,7 +286,7 @@ entries:
   nova:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-11-15T14:14:24.27085897+02:00"
+    created: "2021-11-15T15:30:19.479613287+02:00"
     description: A Helm chart for Kubernetes deployment nova application
     digest: 5dc106eac366c73dc6881ea282642b2045ccbd0f9ab96ad175e342988d83cfe8
     name: nova
@@ -297,7 +297,7 @@ entries:
   numint:
   - apiVersion: v2
     appVersion: 5.0.79
-    created: "2021-11-15T14:14:24.271419997+02:00"
+    created: "2021-11-15T15:30:19.480328796+02:00"
     description: A Helm chart for Numint application
     digest: 51310aa3e86e8b71268e54b08901e9181de345f662686bcd343f332fadf0e3d0
     name: numint
@@ -308,7 +308,7 @@ entries:
   postgresql:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2021-11-15T14:14:24.272010035+02:00"
+    created: "2021-11-15T15:30:19.481016405+02:00"
     description: A Helm chart for Postgresql
     digest: d68735b1a760babfb0db7c4c80f681e7421c7f3a3f33c4c2451e81f02bb2b539
     name: postgresql
@@ -318,7 +318,7 @@ entries:
   rabbitmq:
   - apiVersion: v1
     appVersion: 3.8.0
-    created: "2021-11-15T14:14:24.272982125+02:00"
+    created: "2021-11-15T15:30:19.481698245+02:00"
     description: A Helm chart for RabbitMQ
     digest: 47d0390c33cdf58757673751bdc5efbd768e6c33981b5b79456a4d96cb578cdf
     name: rabbitmq
@@ -328,9 +328,9 @@ entries:
   registry:
   - apiVersion: v2
     appVersion: 5.0.12
-    created: "2021-11-15T14:14:24.274025516+02:00"
+    created: "2021-11-15T15:30:19.482235551+02:00"
     description: A Helm chart for Sherlock application
-    digest: ec154351809b0bf3cb0055ed7a422d1f86bf2c690eed082c34186d5aa5fcc728
+    digest: 7c6d22f44bde98affdea8755da88c6d3a1595aaa20339377bc4f47fa236153f1
     name: registry
     type: application
     urls:
@@ -339,7 +339,7 @@ entries:
   zookeeper:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-11-15T14:14:24.274811133+02:00"
+    created: "2021-11-15T15:30:19.483387639+02:00"
     dependencies:
     - name: common
       repository: https://raw.githubusercontent.com/vyourtaev/helm-repo/main
@@ -351,4 +351,4 @@ entries:
     urls:
     - zookeeper-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-15T14:14:24.245408564+02:00"
+generated: "2021-11-15T15:30:19.451141134+02:00"
